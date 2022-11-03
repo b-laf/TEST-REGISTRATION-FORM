@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <h1 id="title">Pizza di la mama</h1>
+  <p id="description">Thank you for taking the time to give us your feedback to help us improve the restaurant</p>
+  <form id="survey-form" action="">
+    <label id="name-label" for="name">Name<input id="name" type="text" required placeholder="Your Name"></label>
+    <label id="email-label" for="email">Email<input id="email" type="email" required placeholder="Your Email"></label>
+    <label id="number-label" for="number">Age (optional)<input id="number" type="number" min="18" max="100" placeholder="Your age"></label>
+    <label for="dropdown">How did you find us?
+      <select id="dropdown">
+        <option disabled selected value>Select an option</option>
+        <option value="1">Social Media</option>
+        <option value="2">Google</option>
+      </select>
+    </label>
+    <label>What did you prefer?
+      <label class="inline" for="food"><input id="food" type="radio" name="food-drinks" value="food">Food</label>
+      <label class="inline" for="drinks"><input id="drinks" type="radio" name="food-drinks" value="drinks">Drinks</label>
+    </label>
+    <label for="improvement">What should we improove?
+      <label class="inline" for="products"><input id="products" type="checkbox" name="improvement" value="products">Products</label>
+      <label class="inline" for="service"><input type="checkbox" name="improvement" value="service">Service</label>
+      <label class="inline" for="decoration"><input type="checkbox" name="improvement" value="decoration">Decoration</label>
+    </label>
+    <label for="comments">Fell free to let us additionnal comments:
+      <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your text here..."></textarea>
+    </label>
+   <input id="submit" type="submit" value="Submit">
+  </form>
+  </body>
+</html>
